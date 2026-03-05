@@ -11,14 +11,12 @@
     <header id="top">
         <h1>Hello! I'm Dina 👋</h1>
         <p class="intro-text">I’m a proud member of the <strong>SAP family</strong>! 💻✨</p>
-        <div class="header-badges">
-            <span>📍 Based at SAP | 📚 New Study Student | 🚀 Tech Enthusiast</span>
-        </div>
     </header>
 
     <nav>
         <a href="#about">About Me</a>
         <a href="#gallery">Gallery</a>
+        <a href="#goals">Goals</a>
         <a href="#skills">Skills</a>
         <a href="#courses">Courses</a>
         <a href="#contact">Contact</a>
@@ -26,35 +24,41 @@
 
     <main>
         <article id="about">
-            <section>
-                <h2 class="section-title-pink">My Hobbies 🎨</h2>
-                <ul class="hobby-list">
-                    <li><strong>Going to the Gym:</strong> Keeping active! 🏋️‍♀️</li>
-                    <li><strong>Painting:</strong> Expressing creativity. 🎨</li>
-                    <li><strong>Traveling:</strong> Making memories. ✈️</li>
-                </ul>
-            </section>
-
-            <hr class="separator">
-
-            <section id="gallery">
-                <h2 class="section-title-blue">Photo Gallery (CSS Grid) 📸</h2>
-                <div class="gallery-grid">
-                    <figure class="grid-item">
-                        <img src="christmas.jpg" alt="Travel">
-                        <figcaption>Travel memories ✈️</figcaption>
-                    </figure>
-                    <figure class="grid-item">
-                        <img src="myPainting.jpeg" alt="Artwork">
-                        <figcaption>My latest artwork 🎨</figcaption>
-                    </figure>
-                    <figure class="grid-item">
-                        <img src="sap_office.jpg" alt="SAP Office">
-                        <figcaption>Life at SAP 💻</figcaption>
-                    </figure>
-                </div>
-            </section>
+            <h2 class="section-title-pink">My Hobbies 🎨</h2>
+            <ul class="hobby-list">
+                <li><strong>Going to the Gym:</strong> Keeping active and healthy! 🏋️‍♀️</li>
+                <li><strong>Painting:</strong> Expressing creativity on canvas. 🎨</li>
+                <li><strong>Traveling:</strong> Making memories worldwide. ✈️</li>
+            </ul>
         </article>
+
+        <hr class="separator">
+
+        <section id="goals">
+            <h2 class="section-title-dark">Current Goals 🎯</h2>
+            <div class="goals-flex">
+                <div class="goal-card">
+                    <span class="status-badge progress">In Progress</span>
+                    <h3>Web Engineering</h3>
+                    <p>Learning deeper web technologies and responsive architectures.</p>
+                </div>
+                <div class="goal-card">
+                    <span class="status-badge future">Next Step</span>
+                    <h3>Advanced Algorithms</h3>
+                    <p>Mastering logic and problem-solving for complex systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <section id="gallery">
+            <h2 class="section-title-blue">Photo Gallery 📸</h2>
+            <div class="gallery-grid">
+                <figure><img src="christmas.jpg" alt="Travel"><figcaption>Memories ✈️</figcaption></figure>
+                <figure><img src="myPainting.jpeg" alt="Art"><figcaption>My Painting 🎨</figcaption></figure>
+            </div>
+        </section>
 
         <hr class="separator">
 
@@ -63,19 +67,23 @@
             <div class="skills-flex">
                 <div class="skill-card">
                     <span class="skill-name">ABAP (SAP Systems)</span>
-                    <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                    <div class="progress-bar"><div class="progress" style="width: 67%;"></div></div>
                 </div>
                 <div class="skill-card">
-                    <span class="skill-name">Java & Python Development</span>
-                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    <span class="skill-name">Java</span>
+                    <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-name">Python</span>
+                    <div class="progress-bar"><div class="progress" style="width: 62%;"></div></div>
                 </div>
                 <div class="skill-card">
                     <span class="skill-name">Algorithms & Database</span>
-                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    <div class="progress-bar"><div class="progress" style="width: 35%;"></div></div>
                 </div>
                 <div class="skill-card">
                     <span class="skill-name">Web Engineering (HTML/CSS)</span>
-                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    <div class="progress-bar"><div class="progress" style="width: 66%;"></div></div>
                 </div>
             </div>
         </section>
@@ -83,20 +91,18 @@
         <hr class="separator">
 
         <section id="courses">
-            <h2 class="section-title-pink">Current Semester Courses 📚</h2>
+            <h2 class="section-title-pink">University Courses (Sem. 1) 📚</h2>
             <table class="zebra-table">
                 <thead>
-                    <tr>
-                        <th>Course Name</th>
-                        <th>Focus Area</th>
-                        <th>Type</th>
-                    </tr>
+                    <tr><th>Course Name</th><th>Focus Area</th><th>Type</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Web Engineering</td><td>HTML, CSS & JS</td><td>Technical</td></tr>
+                    <tr><td>Web Engineering</td><td>Frontend Development</td><td>Technical</td></tr>
                     <tr><td>Linear Algebra</td><td>Mathematics</td><td>Theoretical</td></tr>
-                    <tr><td>Programming</td><td>Logic & Algorithms</td><td>Core</td></tr>
-                    <tr><td>BWL</td><td>Management</td><td>Management</td></tr>
+                    <tr><td>Programming</td><td>Basic development</td><td>Core</td></tr>
+                    <tr><td>BWL</td><td>Management</td><td>Business</td></tr>
+                    <tr><td>Scientific Programming LAB</td><td>Data Science and Machine Learning</td><td>Technical</td></tr>
+                    <tr><td>Theoretical Informatics</td><td>Logic and Algorithms</td><td>Theoretical</td></tr>
                 </tbody>
             </table>
         </section>
@@ -107,12 +113,11 @@
             <h2>Contact with me! ✉️</h2>
             <form class="styled-form">
                 <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="example@email.com" required>
+                <input type="email" placeholder="Email" required>
                 <textarea rows="4" placeholder="Your message..."></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </section>
-        
         <div class="back-to-top">
             <a href="#top" class="top-link">⬆️ Back to Top</a>
         </div>
