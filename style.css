@@ -1,0 +1,181 @@
+/* Universal Rules: Zero margin, padding and border-box sizing [cite: 175, 177] */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #ae004e;
+    --secondary: #0070d2;
+    --light-pink: #fffbfd;
+    --text-color: #333;
+}
+
+body {
+    /* Sans-serif is the default clean font choice [cite: 23] */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Recommended line height for readability [cite: 76] */
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fdfdfd;
+}
+
+/* Header styling with relative units [cite: 187, 189] */
+header {
+    background-color: var(--light-pink);
+    padding: 2.5rem;
+    border-left: 8px solid var(--primary);
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.intro-text {
+    /* Relative font size [cite: 46, 51] */
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Sticky Navigation: Acts like relative until scrolled [cite: 269, 272, 813] */
+nav {
+    background: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    /* Adding hover transition [cite: 100] */
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* Main Layout container [cite: 20] */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Flexbox Gallery: One-dimensional layout [cite: 301, 305] */
+.gallery-flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Items wrap when exceeding container [cite: 353, 355] */
+    justify-content: center;
+}
+
+.gallery-flex figure {
+    flex: 1 1 250px; /* Expand and shrink to fill space [cite: 306] */
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Responsive Images: Scale down to fit container [cite: 635, 636, 770] */
+.gallery-flex img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.gallery-flex img:hover {
+    transform: scale(1.03);
+}
+
+/* Zebra Striping for Tables: Apply background to even rows [cite: 164, 167, 171] */
+.zebra-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.zebra-table th {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+}
+
+.zebra-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.zebra-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Contact Form styling */
+.contact-box {
+    background-color: var(--light-pink);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid #f0e6eb;
+    margin-top: 2rem;
+}
+
+.styled-form input, 
+.styled-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.styled-form button {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Media Queries for small devices (Smartphone) [cite: 681, 721] */
+@media screen and (max-width: 767px) {
+    nav a {
+        display: block; /* Vertical navigation on mobile [cite: 658, 807] */
+        margin: 10px 0;
+    }
+    
+    header h1 {
+        font-size: 1.5rem; /* Adjusting font size for small screens [cite: 784, 786] */
+    }
+}
+
+.separator {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.back-to-top {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-to-top a {
+    background: var(--secondary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}

@@ -2,157 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Blog | Dina</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333;">
+<body>
 
-    <header id="top" style="background-color: #fffbfd; padding: 20px; border-radius: 0 0 15px 15px; border-left: 5px solid #ae004e;">
+    <header id="top">
         <h1>Hello! I'm Dina 👋</h1>
-        <p style="font-size: 1.2em;">
-            I’m a proud member of the <strong>SAP family</strong>! 💻✨ 
-        </p>
-        <p>
-            Currently, I am navigating through my <strong>first semester</strong> of the <mark>New Study program</mark>. 
-            On this page, you’ll get to know me better—from my daily grinds to the things I love.
-        </p>
-        <span>📍 Based at SAP | 📚 New Study Student | 🚀 Tech Enthusiast</span>
+        <p class="intro-text">I’m a proud member of the <strong>SAP family</strong>! 💻✨</p>
+        <div class="header-badges">
+            <span>📍 Based at SAP | 📚 New Study Student | 🚀 Tech Enthusiast</span>
+        </div>
     </header>
 
-    <nav style="background: #f4f4f4; padding: 15px; text-align: center; position: sticky; top: 0; border-bottom: 1px solid #ddd; z-index: 1000;">
-        <a href="#about" style="margin: 0 15px; text-decoration: none; color: #ae004e; font-weight: bold;">About Me</a>
-        <a href="#gallery" style="margin: 0 15px; text-decoration: none; color: #ae004e; font-weight: bold;">Gallery</a>
-        <a href="#courses" style="margin: 0 15px; text-decoration: none; color: #ae004e; font-weight: bold;">My Courses</a>
-        <a href="#contact" style="margin: 0 15px; text-decoration: none; color: #ae004e; font-weight: bold;">Contact</a>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#courses">My Courses</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <main style="max-width: 900px; margin: 20px auto; padding: 20px;">
-
+    <main>
         <article id="about">
             <section>
-                <h2 style="color: #8e124a;">My Hobbies 🎨</h2>
-                <ul style="list-style-type: '° '; padding-left: 20px;">
-                    <li><strong>Going to the Gym:</strong> Keeping active and staying healthy! 🏋️‍♀️</li>
-                    <li><strong>Painting:</strong> Expressing creativity through colors on canvas. 🎨</li>
-                    <li><strong>Shopping:</strong> Exploring new trends and finding hidden gems. 🛍️</li>
-                    <li><strong>Traveling:</strong> Visiting new places and making memories. ✈️</li>
-                    <li><strong>Sleeping:</strong> Recharging my batteries for the next big challenge at SAP and DHBW! 😴</li>
+                <h2 class="section-title-pink">My Hobbies 🎨</h2>
+                <ul class="hobby-list">
+                    <li><strong>Going to the Gym:</strong> Keeping active! 🏋️‍♀️</li>
+                    <li><strong>Painting:</strong> Expressing creativity. 🎨</li>
+                    <li><strong>Traveling:</strong> Making memories. ✈️</li>
                 </ul>
             </section>
 
-            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+            <hr class="separator">
 
             <section id="gallery">
-                <h2 style="color: #0070d2;">Photo Gallery 📸</h2>
-                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <h2 class="section-title-blue">Photo Gallery 📸</h2>
+                <div class="gallery-flex">
                     <figure>
-                        <img src="christmas.jpg" alt="A beautiful view from my last trip" width="200" style="border-radius: 10px;">
+                        <img src="christmas.jpg" alt="Travel memories">
                         <figcaption>Travel memories ✈️</figcaption>
                     </figure>
                     <figure>
-                        <img src="myPainting.jpeg" alt="My latest painting on canvas" width="200" style="border-radius: 10px;">
+                        <img src="myPainting.jpeg" alt="My latest artwork">
                         <figcaption>My latest artwork 🎨</figcaption>
                     </figure>
                 </div>
             </section>
         </article>
 
-        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
-
-        <section>
-            <h2 style="color: #ae004e;">Featured Video 🎬</h2>
-            <div style="text-align: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/w5K1w5rMDkM" 
-                        style="border-radius: 15px; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" allowfullscreen></iframe>
-                <p>A little glimpse into my world!</p>
-            </div>
-        </section>
-
-        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+        <hr class="separator">    
 
         <section id="courses">
-            <h2 style="color: #470121;">Current Semester Courses 📚</h2>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 15px; border-radius: 12px; overflow: hidden; border: 1px solid #eee;">
+            <h2 class="section-title-dark">Current Semester Courses 📚</h2>
+            <table class="zebra-table">
                 <thead>
-                    <tr style="background-color: #cb035d; color: white; text-align: left;">
-                        <th style="padding: 15px;">Course Name</th>
-                        <th style="padding: 15px;">Focus Area</th>
-                        <th style="padding: 15px;">Type</th>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Focus Area</th>
+                        <th>Type</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr style="background-color: #fffafc;"><td style="padding: 12px; border-bottom: 1px solid #eee;"><strong>Linear Algebra</strong></td><td style="padding: 12px; border-bottom: 1px solid #eee;">Mathematics & Matrices</td><td style="padding: 12px; border-bottom: 1px solid #eee;">Theoretical</td></tr>
-                    <tr><td style="padding: 12px; border-bottom: 1px solid #eee;"><strong>Web Engineering</strong></td><td style="padding: 12px; border-bottom: 1px solid #eee;">HTML, CSS & JS Architecture</td><td style="padding: 12px; border-bottom: 1px solid #eee;">Technical</td></tr>
-                    <tr style="background-color: #fffafc;"><td style="padding: 12px; border-bottom: 1px solid #eee;"><strong>Programming</strong></td><td style="padding: 12px; border-bottom: 1px solid #eee;">Algorithms & Logic</td><td style="padding: 12px; border-bottom: 1px solid #eee;">Core Coding</td></tr>
-                    <tr><td style="padding: 12px; border-bottom: 1px solid #eee;"><strong>BWL</strong></td><td style="padding: 12px; border-bottom: 1px solid #eee;">Business Administration</td><td style="padding: 12px; border-bottom: 1px solid #eee;">Management</td></tr>
-                    <tr style="background-color: #fffafc;"><td style="padding: 12px; border-bottom: 1px solid #eee;"><strong>Scientific Programming Lab</strong></td><td style="padding: 12px; border-bottom: 1px solid #eee;">Hands-on Projects</td><td style="padding: 12px; border-bottom: 1px solid #eee;">Practical</td></tr>
-                    <tr><td style="padding: 12px;"><strong>Theoretical Informatics</strong></td><td style="padding: 12px;">Logic in Computer Science</td><td style="padding: 12px;">Theoretical</td></tr>
+                    <tr><td>Web Engineering</td><td>HTML, CSS & JS</td><td>Technical</td></tr>
+                    <tr><td>Linear Algebra</td><td>Mathematics</td><td>Theoretical</td></tr>
+                    <tr><td>Programming</td><td>Algorithms & Logic</td><td>Core</td></tr>
+                    <tr><td>BWL</td><td>Business</td><td>Management</td></tr>
                 </tbody>
             </table>
         </section>
     </main>
 
-    <aside style="max-width: 900px; margin: 20px auto; padding: 20px; background-color: #f9fdf9; border-radius: 15px; border-left: 5px solid #314f11;">
-        <h2 style="color: #314f11;">Favorite Books 📖</h2>
-        <ol>
-            <li>
-                <a href="https://en.wikipedia.org/wiki/The_Little_Prince" target="_blank" style="text-decoration: none; color: #1a73e8; font-weight: bold;">👑 The Little Prince</a> 
-                <small>— Antoine de Saint-Exupéry</small>
-            </li>
-            <li>
-                <a href="https://en.wikipedia.org/wiki/Harry_Potter" target="_blank" style="text-decoration: none; color: #1a73e8; font-weight: bold;">⚡ Harry Potter Series</a> 
-                <small>— J.K. Rowling</small>
-            </li>
-        </ol>
-    </aside>
-
-    <footer style="background-color: #f9f9f9; padding: 40px 20px; margin-top: 40px;">
-        
-        <section id="contact" style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #fffafc; border-radius: 20px; border: 1px solid #f0e6eb;">
-            <h2 style="color: #7f0139; text-align: center;">Contact with me! ✉️</h2>
-            
-            <form style="margin-top: 20px;">
-                <div>
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Full Name</label>
-                    <input type="text" placeholder="Your name.." style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 10px; box-sizing: border-box; margin-bottom: 15px;">
-                </div>
-
-                <div>
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Email</label>
-                    <input type="email" placeholder="example@email.com" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 10px; box-sizing: border-box; margin-bottom: 15px;">
-                </div>
-
-                <div>
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Phone Number</label>
-                    <input type="tel" placeholder="+00 000 000000" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 10px; box-sizing: border-box; margin-bottom: 15px;">
-                </div>
-
-                <div>
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Gender</label>
-                    <div style="display: flex; gap: 15px; padding: 5px; margin-bottom: 15px;">
-                        <label><input type="radio" name="gender" value="female"> Female</label>
-                        <label><input type="radio" name="gender" value="male"> Male</label>
-                        <label><input type="radio" name="gender" value="other"> Other</label>
-                    </div>
-                </div>
-
-                <div>
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Favorite Color</label>
-                    <input type="color" value="#ae004e" style="width: 60px; height: 40px; border: none; cursor: pointer; background: none; margin-bottom: 15px;">
-                </div>
-
-                <div>
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Message</label>
-                    <textarea rows="4" placeholder="How can I help you?" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 10px; box-sizing: border-box; resize: vertical; margin-bottom: 15px;"></textarea>
-                </div>
-
-                <button type="submit" style="background-color: #ae004e; color: white; padding: 15px; border: none; border-radius: 30px; font-size: 1em; font-weight: bold; cursor: pointer; width: 100%;">
-                    Send Message
-                </button>
+    <footer>
+        <section id="contact" class="contact-box">
+            <h2>Contact with me! ✉️</h2>
+            <form class="styled-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="example@email.com" required>
+                <textarea rows="4" placeholder="How can I help you?"></textarea>
+                <button type="submit">Send Message</button>
             </form>
         </section>
-
-        <div style="text-align: center; margin-top: 30px;">
-            <a href="#top" style="text-decoration: none; background: #0070d2; color: white; padding: 10px 20px; border-radius: 20px;">⬆️ Back to Top</a>
+        <div class="back-to-top">
+            <a href="#top">⬆️ Back to Top</a>
         </div>
     </footer>
 
