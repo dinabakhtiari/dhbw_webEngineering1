@@ -19,7 +19,8 @@
     <nav>
         <a href="#about">About Me</a>
         <a href="#gallery">Gallery</a>
-        <a href="#courses">My Courses</a>
+        <a href="#skills">Skills</a>
+        <a href="#courses">Courses</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -37,36 +38,44 @@
             <hr class="separator">
 
             <section id="gallery">
-                <h2 class="section-title-blue">Photo Gallery 📸</h2>
-                <div class="gallery-flex">
-                    <figure>
-                        <img src="christmas.jpg" alt="Travel memories">
+                <h2 class="section-title-blue">Photo Gallery (CSS Grid) 📸</h2>
+                <div class="gallery-grid">
+                    <figure class="grid-item">
+                        <img src="christmas.jpg" alt="Travel">
                         <figcaption>Travel memories ✈️</figcaption>
                     </figure>
-                    <figure>
-                        <img src="myPainting.jpeg" alt="My latest artwork">
+                    <figure class="grid-item">
+                        <img src="myPainting.jpeg" alt="Artwork">
                         <figcaption>My latest artwork 🎨</figcaption>
+                    </figure>
+                    <figure class="grid-item">
+                        <img src="sap_office.jpg" alt="SAP Office">
+                        <figcaption>Life at SAP 💻</figcaption>
                     </figure>
                 </div>
             </section>
         </article>
 
         <hr class="separator">
-        
+
         <section id="skills">
-            <h2 class="section-title-pink">My Technical Skills 🚀</h2>
-            <div class="skills-container">
+            <h2 class="section-title-dark">My Technical Skills 🚀</h2>
+            <div class="skills-flex">
                 <div class="skill-card">
-                    <span class="skill-name">HTML5</span>
-                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    <span class="skill-name">ABAP (SAP Systems)</span>
+                    <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
                 </div>
                 <div class="skill-card">
-                    <span class="skill-name">CSS3 (Layouts & RWD)</span>
+                    <span class="skill-name">Java & Python Development</span>
                     <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
                 </div>
                 <div class="skill-card">
-                    <span class="skill-name">Web Engineering</span>
+                    <span class="skill-name">Algorithms & Database</span>
                     <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-name">Web Engineering (HTML/CSS)</span>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
                 </div>
             </div>
         </section>
@@ -74,7 +83,7 @@
         <hr class="separator">
 
         <section id="courses">
-            <h2 class="section-title-dark">Current Semester Courses 📚</h2>
+            <h2 class="section-title-pink">Current Semester Courses 📚</h2>
             <table class="zebra-table">
                 <thead>
                     <tr>
@@ -86,8 +95,8 @@
                 <tbody>
                     <tr><td>Web Engineering</td><td>HTML, CSS & JS</td><td>Technical</td></tr>
                     <tr><td>Linear Algebra</td><td>Mathematics</td><td>Theoretical</td></tr>
-                    <tr><td>Programming</td><td>Algorithms & Logic</td><td>Core</td></tr>
-                    <tr><td>BWL</td><td>Business</td><td>Management</td></tr>
+                    <tr><td>Programming</td><td>Logic & Algorithms</td><td>Core</td></tr>
+                    <tr><td>BWL</td><td>Management</td><td>Management</td></tr>
                 </tbody>
             </table>
         </section>
@@ -99,12 +108,13 @@
             <form class="styled-form">
                 <input type="text" placeholder="Full Name" required>
                 <input type="email" placeholder="example@email.com" required>
-                <textarea rows="4" placeholder="How can I help you?"></textarea>
+                <textarea rows="4" placeholder="Your message..."></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </section>
+        
         <div class="back-to-top">
-            <a href="#top">⬆️ Back to Top</a>
+            <a href="#top" class="top-link">⬆️ Back to Top</a>
         </div>
     </footer>
 
