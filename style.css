@@ -44,14 +44,6 @@ header {
     text-align: center;
 }
 
-.github-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--secondary);
-    text-decoration: none;
-    font-weight: bold;
-}
-
 nav {
     background: #fff;
     padding: 1rem;
@@ -104,42 +96,37 @@ main {
     font-size: 0.8rem;
     font-weight: bold;
     color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.status-badge.progress { background: var(--secondary); }
-.status-badge.future { background: #666; }
+
+.status-badge.progress { background-color: var(--secondary); }
+.status-badge.future { background-color: #666; }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
-.gallery-grid img { width: 100%; 
-    border-radius: 10px; 
-    display: block; 
-}
+.gallery-grid img { width: 100%; border-radius: 10px; display: block; }
 
 .skills-flex { display: flex; 
     flex-direction: column; 
     gap: 20px; 
 }
-
 .skill-card { background: #fff; 
     padding: 1.2rem; 
     border-radius: 10px; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
 }
-
 .skill-name { font-weight: bold; 
     display: block; 
     margin-bottom: 8px; 
 }
-
 .progress-bar { background: #eee; 
     height: 14px; 
     border-radius: 7px; 
     overflow: hidden; 
 }
-
 .progress { background: var(--primary); 
     height: 100%; 
     transition: width 1s ease; 
@@ -166,7 +153,6 @@ main {
     border: 1px solid #eee; 
 }
 .form-group { margin-bottom: 1.2rem; }
-
 .form-group label { display: block; 
     font-weight: bold; 
     margin-bottom: 0.5rem; 
@@ -177,7 +163,6 @@ main {
     border: 1px solid #ccc; 
     font-size: 1rem; 
 }
-
 .styled-form button { background: var(--primary); 
     color: white; 
     padding: 1rem; 
@@ -192,7 +177,6 @@ main {
 .back-to-top { text-align: center; 
     margin-top: 3rem; 
 }
-
 .top-link { background: var(--secondary); 
     color: white; 
     padding: 12px 25px; 
@@ -206,7 +190,6 @@ main {
     .goal-card { flex: 1 1 100%; }
     nav a { display: block; margin: 10px 0; }
 }
-
 .separator { margin: 4rem 0; 
     border: 0; 
     border-top: 1px solid #eee; 
